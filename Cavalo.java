@@ -1,14 +1,31 @@
-package POOHeranca;
 
-public class Cavalo extends Animal {
+public class Cavalo implements Animal{
 	
-	private String correr;
-
-	public String getCorrer() {
-		return correr;
+	@Override
+	public void nome() {
+		System.out.println("O nome do Cavalo é Spirit!");
+		
 	}
 
-	public void setCorrer(String correr) {
-		this.correr = correr;
+	@Override
+	public void idade() {
+		System.out.println("Pegasus tem 5 anos.");
+		
 	}
+
+	@Override
+	public void emitirSom() {
+		System.out.println("O cavalo gosta de relinchar: IIIRRRRÍ");
+		
+	}
+
+	@Override
+	public void correr() {
+		System.out.println("O cavalo está correndo...\n\n");
+		
+	}
+
+	@Override
+	public void subirEmArvores() {}
+
 }
