@@ -1,31 +1,14 @@
+package POOHeranca;
 
-public class Cachorro implements Animal {
+public class Cachorro extends Animal {
+		
+		private String correr;
 
-       @Override
-		public void nome() {
-			System.out.println("O nome do cachorro é Snopy.");
-			
+		public String getCorrer() {
+			return correr;
 		}
 
-		@Override
-		public void idade() {
-			System.out.println("Snopy tem 3 anos.");
-			
+		public void setCorrer(String correr) {
+			this.correr = correr;
 		}
-
-		@Override
-		public void emitirSom() {
-			System.out.println("O cachorro faz: AU-AU...");
-			
-		}
-
-		@Override
-		public void correr() {
-			System.out.println("O cachorro está correndo.\n\n");
-			
-		}
-
-		@Override
-		public void subirEmArvores() {}
-
-	}
+}
